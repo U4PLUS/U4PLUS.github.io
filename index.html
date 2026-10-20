@@ -34,9 +34,9 @@
     }
     .avatar {
       width: 104px; height: 104px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 44px; font-weight: 800; color: #fff;
+      object-fit: cover;
+      display: inline-block;
+      border: 2px solid var(--border);
       margin-bottom: 20px;
       box-shadow: 0 8px 30px rgba(47, 129, 247, 0.25);
     }
@@ -85,7 +85,7 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="avatar">U4</div>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/274547071?s=208&v=4" alt="U4PLUS" />
       <h1>U4PLUS</h1>
       <p class="tagline">GitHub Pages 个人主页 · 欢迎访问 👋</p>
     </header>
@@ -94,8 +94,8 @@
       <h2>关于我</h2>
       <div class="card">
         <p>
-          这里是我的个人站点，由 GitHub Pages 免费托管。你可以在这里找到我的
-          项目、笔记与分享。内容正在建设中，敬请期待。
+          这里是我的个人站点，由 GitHub Pages 免费托管，百分百由 DeepSeek 驱动。
+          你可以在这里找到我的项目、笔记与分享。内容正在建设中，敬请期待。
         </p>
       </div>
       <div class="tags">
@@ -107,17 +107,17 @@
       <h2>项目</h2>
       <div class="card">
         <h3><a href="https://github.com/U4PLUS/omp-server-android" target="_blank" rel="noopener">omp-server-android</a></h3>
-        <p>一个 Android 服务端应用。</p>
+        <p>Open.MP 的安卓移植版。</p>
         <p class="meta">公开仓库</p>
       </div>
       <div class="card">
         <h3><a href="https://github.com/U4PLUS/com.cleobuilder.app" target="_blank" rel="noopener">com.cleobuilder.app</a></h3>
-        <p>Cleo Builder 应用。</p>
+        <p>Android 端 CLEO 编译器。</p>
         <p class="meta">公开仓库</p>
       </div>
       <div class="card">
         <h3><a href="https://github.com/U4PLUS/com.uchat.app" target="_blank" rel="noopener">com.uchat.app</a></h3>
-        <p>uChat 应用。</p>
+        <p>支持 Android 5 的 AI 聊天客户端。</p>
         <p class="meta">公开仓库</p>
       </div>
     </section>
